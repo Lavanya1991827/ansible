@@ -2,13 +2,13 @@
   hosts: localhost
   vars:
     NAME: Sivakumar # key value
-    SKILLS: #Skills is a list type
+    Skills: #Skills is a list type
      - AWS
      - Devops
      - JAVA
      - Docker
      - Kubernetes
-    EXPERIENE: # Experience is map type. It contains key value pairs
+    Experience: # Experience is map type. It contains key value pairs
       DevOps: 7
       AWS: 6
       Docker: 4
