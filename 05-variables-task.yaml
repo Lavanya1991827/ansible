@@ -1,0 +1,12 @@
+- name: varaibles practice
+  hosts: localhost
+  vars:                 #defined variables at playbook level
+   course: Devops
+   trainer: Siva
+  taks:
+    - name: varibles test from tak level  
+      vars:                 #defined variables at task level
+        course: AWS
+        trainer: SivaKumar
+      ansible.builtin.debug:
+       msg: "Hi , I am learning {{course}} and trainer is {{trainer}}"  
