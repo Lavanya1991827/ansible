@@ -1,0 +1,21 @@
+- name: conditions
+  hosts: loclahost
+  become: yes
+  tasks:
+   - name: check roboshop user exists or not
+     ansible.builtin.command: id roboshop #ansible command module to run command -to check user exists or not
+     register: user #user is a variable name (we can give any name here). the ansible command result stored in this user variables.yaml
+     ignore_errors: true # ansilbe will not exit even it got error
+      
+   - name: print variable value
+     ansible.builtin.debug:
+       msg: "User output is: {{user}}"
+
+   - name: print exit status or return code
+     ansible.builtin.debug:
+      msg: "status is: {{user.rc}}"  #rc is a status code
+
+    - name: create user
+      ansible.builtin.user:
+        name: roboshop
+      when: user.rc != 0 #condition     
