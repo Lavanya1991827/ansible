@@ -10,4 +10,4 @@
   tasks:
     - name: reading varible values from user prompt:
       ansible.builtin.debug:
-      msg:"Hi, entered username: {{USERNAME}} and password : {{PASSWORD}} "
+      msg: "Hi, entered username: {{USERNAME}} and password : {{PASSWORD}} "
