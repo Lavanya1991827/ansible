@@ -3,7 +3,7 @@
   vars:                 #defined variables at playbook level
    course: Devops
    trainer: Siva
-  taks:
+  tasks:
     - name: varibles test from tak level  
       vars:                 #defined variables at task level
         course: AWS
