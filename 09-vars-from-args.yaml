@@ -1,0 +1,6 @@
+- name: reading varibles from args
+  hosts: localhost
+  tasks:
+   - name: check variables
+     ansible.inbuilt.debug:
+      msg: "Hi ,I am learning {{Course}} and trainer is {{Trainer}}"
