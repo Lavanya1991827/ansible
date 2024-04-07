@@ -4,7 +4,7 @@
    - name: USERNAME
      prompt: Please enter USERNAME
      private: false # user can see what they are entering
-   -name: PASSWORD
+   - name: PASSWORD
     prompt: Please enter PASSWORD
     private: true   # user can't see what they are entering  
   tasks:
