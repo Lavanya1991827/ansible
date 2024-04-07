@@ -1,0 +1,6 @@
+- name: variables from inventory file practice
+  hosts: localhost
+  tasks:
+   - name: reding varaibles from inventory file
+     ansible.buitin.debug:
+       msg: "Hi ,I am learning {{Course}} and trainer is {{Trainer}}"
