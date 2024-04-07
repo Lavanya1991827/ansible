@@ -1,9 +1,9 @@
 - name: variables test
   hosts: localhost
-  tasks:
   vars_files:
    - variables.yaml
-  - name: read variables from file
-    ansible.inbuit.debug:
-     msg: "Hi, I am learning {{course}} and trainer is {{trainer}}"
+  tasks: 
+   - name: read variables from file
+     ansible.inbuit.debug:
+      msg: "Hi, I am learning {{course}} and trainer is {{trainer}}"
 
