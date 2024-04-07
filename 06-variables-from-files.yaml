@@ -4,6 +4,6 @@
    - variables.yaml
   tasks: 
    - name: read variables from file
-     ansible.inbuilt.debug:
+     ansible.inbuiltin.debug:
       msg: "Hi, I am learning {{course}} and trainer is {{trainer}}"
 
